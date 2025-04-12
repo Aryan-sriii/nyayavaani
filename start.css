@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#000000;
+    font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;}
+  .coming-soon-container h1 {
+    font-size: 3rem;
+    color: #d4af37; 
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+ .coming-soon-container p {
+    font-size: 1rem;
+    color: #aaaaaa;
+  }
+  #loop-timer
+   {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #d4af37;
+    font-family: monospace;
+    letter-spacing: 2px;
+  }
+  .wait-msg 
+  {
+    font-size: 1rem;
+    color: #888888;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+    
+  
