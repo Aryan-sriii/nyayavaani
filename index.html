@@ -7,30 +7,15 @@
   <!-- Primary Meta Tags -->
   <title>NyayaVaani - Your Legal Voice Assistant</title>
   <meta name="title" content="NyayaVaani - Your Legal Voice Assistant" />
-  <meta name="description" content="NyayaVaani is an AI-powered legal voice bot offering multilingual legal support across India. Powered by Bhashini, Twilio, and AI." />
-  <meta name="keywords" content="NyayaVaani, legal voice bot, AI legal chatbot, Indian judiciary help, Bhashini Twilio, legal advice India, voice legal AI" />
+  <meta name="description" content="NyayaVaani is an AI-powered legal assistant offering voice and text-based legal support across India. Powered by advanced AI and multilingual capabilities." />
+  <meta name="keywords" content="NyayaVaani, legal voice bot, legal chatbot, AI legal assistant, Indian judiciary help, legal advice India, multilingual AI" />
   <meta name="author" content="NyayaVaani Team" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://nyayavaani.in/" />
+  <link rel="canonical" href="https://nyayavaani.in.net/" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://nyayavaani.in/" />
-  <meta property="og:title" content="NyayaVaani - Your Legal Voice Assistant" />
-  <meta property="og:description" content="Get instant legal help through voice in multiple Indian languages with NyayaVaani, an AI-powered chatbot using Bhashini and Twilio." />
-  <meta property="og:image" content="https://nyayavaani.in/og-image.jpg" />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://nyayavaani.in/" />
-  <meta property="twitter:title" content="NyayaVaani - Your Legal Voice Assistant" />
-  <meta property="twitter:description" content="Get instant legal help through voice in multiple Indian languages with NyayaVaani, an AI-powered chatbot using Bhashini and Twilio." />
-  <meta property="twitter:image" content="https://nyayavaani.in/og-image.jpg" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="https://nyayavaani.in/favicon.ico" type="image/x-icon" />
-
-  <!-- Tailwind CSS -->
+  <link rel="icon" href="https://nyayavaani.in.net/favicon.ico" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -46,215 +31,435 @@
     }
   </script>
 
-  <!-- Structured Data (Schema.org) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "NyayaVaani",
-    "url": "https://nyayavaani.in",
-    "description": "AI-powered legal voice bot helping Indian citizens access multilingual legal aid instantly.",
-    "sameAs": ["https://twitter.com/nyayavaani", "https://www.linkedin.com/company/nyayavaani"],
-    "publisher": {
-      "@type": "Organization",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
       "name": "NyayaVaani",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://nyayavaani.in/logo.png"
+      "url": "https://nyayavaani.in.net/",
+      "description": "AI-powered legal assistant providing voice and text-based legal guidance in multiple Indian languages.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://nyayavaani.in/#chat-interface?q={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
     }
-  }
   </script>
 </head>
 <body class="bg-light text-gray-800 font-sans">
-  <!-- Navbar -->
-<nav class="bg-primary text-white p-4 shadow-lg sticky top-0 z-50">
-  <div class="container mx-auto flex justify-between items-center">
-    <a href="#home" class="text-2xl font-extrabold tracking-wide hover:text-accent transition">NyayaVaani</a>
 
-
-    <!-- Hamburger Menu Button -->
-    <button id="menu-btn" class="md:hidden focus:outline-none">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-
-    <!-- Desktop Menu -->
-    <ul class="hidden md:flex space-x-6 font-medium">
-      <li><a href="#home" class="hover:text-accent transition">Home</a></li>
-      <li><a href="#how" class="hover:text-accent transition">How it Works</a></li>
-      <li><a href="#features" class="hover:text-accent transition">Features</a></li>
-      <li><a href="#tech" class="hover:text-accent transition">Technology</a></li>
-      <li><a href="#languages" class="hover:text-accent transition">Languages</a></li>
-      <li><a href="#secure" class="hover:text-accent transition">Security</a></li>
-      <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
-    </ul>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 mt-4 px-4">
-    <a href="#home" class="block py-2 border-b border-white">Home</a>
-    <a href="#how" class="block py-2 border-b border-white">How it Works</a>
-    <a href="#features" class="block py-2 border-b border-white">Features</a>
-    <a href="#tech" class="block py-2 border-b border-white">Technology</a>
-    <a href="#languages" class="block py-2 border-b border-white">Languages</a>
-    <a href="#secure" class="block py-2 border-b border-white">Security</a>
-    <a href="#contact" class="block py-2 border-b border-white">Contact</a>
-  </div>
-</nav>
-  <!-- Hero Section -->
+  <nav class="bg-primary text-white p-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#home" class="text-2xl font-extrabold tracking-wide hover:text-accent transition">NyayaVaani</a>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+        <li><a href="#chat-interface" class="hover:text-accent transition">Chatbot</a></li>
+        <li><a href="#features" class="hover:text-accent transition">Features</a></li>
+        <li><a href="#tech" class="hover:text-accent transition">Technology</a></li>
+        <li><a href="#languages" class="hover:text-accent transition">Languages</a></li>
+        <li><a href="#upload-analyze" class="hover:text-accent transition">Upload Document</a></li>
+        <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
+      </ul>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 mt-4 px-4">
+      <a href="#home" class="block py-2 border-b border-white">Home</a>
+      <a href="#how" class="block py-2 border-b border-white">How it Works</a>
+      <a href="#features" class="block py-2 border-b border-white">Features</a>
+      <a href="#tech" class="block py-2 border-b border-white">Technology</a>
+      <a href="#languages" class="block py-2 border-b border-white">Languages</a>
+      <a href="#secure" class="block py-2 border-b border-white">Security</a>
+      <a href="#contact" class="block py-2 border-b border-white">Contact</a>
+    </div>
+  </nav>
   <section id="home" class="text-center py-24 bg-gradient-to-r from-primary to-accent text-white">
     <h2 class="text-5xl font-bold mb-4">Welcome to NyayaVaani</h2>
-    <p class="text-xl mb-6 max-w-xl mx-auto">Empowering citizens with instant, voice-based access to legal guidance in their native languages.</p>
-    <a href="tel:+18574661956" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-light transition shadow-lg">
-  Talk to NyayaVaani
-</a>
+    <p class="text-xl mb-6 max-w-xl mx-auto">Empowering citizens with instant, voice and text-based access to legal guidance in their native languages.</p>
   </section>
 
-  <!-- Features Section -->
+
+<section id="callbot-launch" class="py-20 bg-blue-50">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-gray-800"> NyayaVaani CallBot</h3>
+    <p class="text-lg mb-8 max-w-3xl mx-auto text-gray-600">
+  NyayaVaani CallBot provides instant legal guidance in your preferred language, empowering citizens nationwide.</p>
+    <div class="bg-white p-8 rounded-xl shadow">
+      <h4 class="text-xl font-semibold text-primary mb-4">Connect with Justice</h4>
+      <p class="text-base mb-6 text-gray-600">
+        Reach our AI-powered CallBot at <a href="tel:+18574661956" class="text-accent font-medium hover:underline">+1-857-466-1956</a> for reliable legal support tailored to your needs. currently in developing phase.
+      </p>
+      <a href="tel:+18574661956" class="inline-block bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+        Call Now
+      </a>
+          </div>
+      </div>
+</section>
+
   <section id="features" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h3 class="text-3xl font-bold mb-10">Why NyayaVaani?</h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div class="bg-light p-6 rounded-xl shadow hover:shadow-xl transition">
-          <h4 class="font-semibold text-lg mb-2">Multi-language Support</h4>
-          <p>Get legal help in Hindi, English, and regional Indian languages.</p>
+          <h4 class="font-semibold text-lg mb-2">Voice-Based Support</h4>
+          <p>Call our AI bot for instant legal guidance in your language.</p>
         </div>
         <div class="bg-light p-6 rounded-xl shadow hover:shadow-xl transition">
-          <h4 class="font-semibold text-lg mb-2">Voice-Powered Interface</h4>
-          <p>Ask questions naturally — no typing needed.</p>
+          <h4 class="font-semibold text-lg mb-2">Legal Aid Locator</h4>
+          <p>Find nearby legal support services by entering your location.</p>
+          <p>                coming soon....</p>
         </div>
         <div class="bg-light p-6 rounded-xl shadow hover:shadow-xl transition">
-          <h4 class="font-semibold text-lg mb-2">Trusted Legal Information</h4>
-          <p>Backed by verified government sources and legal experts.</p>
+          <h4 class="font-semibold text-lg mb-2">Multilingual Access</h4>
+          <p>Support for Hindi, English, and regional Indian languages.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-10"></h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-light p-6 rounded-xl shadow hover:shadow-xl transition">
+          <h4 class="font-semibold text-lg mb-2">Call Our bot </h4>
+          <p>At +1-857-466-1956 and get solution of your problems in your language </p>
         </div>
         <div class="bg-light p-6 rounded-xl shadow hover:shadow-xl transition">
-          <h4 class="font-semibold text-lg mb-2">AI Chatbot Assistance</h4>
-          <p>Our AI chatbot provides instant, intelligent legal responses around the clock.</p>
+          <h4 class="font-semibold text-lg mb-2">Text Chatbot</h4>
+          <p>Instant, intelligent responses to your legal queries 24/7.</p>
+        </div>
+        <div class="bg-light p-6 rounded-xl shadow hover:shadow-xl transition">
+          <h4 class="font-semibold text-lg mb-2">Document analysis</h4>
+          <p>Unable to understand legal document use our Upload & Analyze Legal Documents feature now  </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Technology Section -->
+
+
+
   <section id="tech" class="py-20 bg-blue-50">
     <div class="max-w-6xl mx-auto text-center px-6">
-      <h3 class="text-3xl font-bold mb-10">Powered by Cutting-Edge AI</h3>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <h3 class="text-3xl font-bold mb-10">Powered by Advanced AI</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="font-bold text-lg mb-2">ASR</h4>
-          <p>Automatic Speech Recognition converts your spoken query to text instantly.</p>
+          <h4 class="font-bold text-lg mb-2">Natural Language Processing</h4>
+          <p>Understands and responds to complex legal queries accurately.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="font-bold text-lg mb-2">NMT</h4>
-          <p>Neural Machine Translation enables real-time multilingual understanding.</p>
+          <h4 class="font-bold text-lg mb-2">Multilingual Support</h4>
+          <p>Processes queries in multiple Indian languages seamlessly.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="font-bold text-lg mb-2">TTS</h4>
-          <p>Text-to-Speech delivers natural-sounding voice replies to your legal queries.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="font-bold text-lg mb-2">ALD</h4>
-          <p>Automatic Language Detection helps detect and adapt to your preferred language instantly.</p>
+          <h4 class="font-bold text-lg mb-2">Scalable Infrastructure</h4>
+          <p>Ensures fast and reliable responses for all users.</p>
         </div>
       </div>
-      <p class="mt-6 text-sm text-gray-600">Powered by <a href="https://bhashini.gov.in/services" class="text-accent underline">Bhashini</a> — India's National Language Translation Mission.</p>
+      <p class="mt-6 text-sm text-gray-600">Built with modern AI technologies for accessibility and efficiency.</p>
     </div>
   </section>
 
-  <!-- Language Support Section -->
   <section id="languages" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto text-center px-6">
       <h3 class="text-3xl font-bold mb-6">Supported Languages</h3>
-      <p class="mb-6 max-w-2xl mx-auto">NyayaVaani supports over 20 Indian languages including Hindi, Tamil, Telugu, Marathi, Bengali, and more — making legal aid accessible to everyone.</p>
+      <p class="mb-6 max-w-2xl mx-auto text-lg">NyayaVaani supports multiple Indian languages, making legal aid accessible to everyone.</p>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm font-medium">
-        <span>Hindi</span><span>Bengali</span><span>Tamil</span><span>Telugu</span>
-        <span>Marathi</span><span>Gujarati</span><span>Kannada</span><span>Malayalam</span>
-        <span>Odia</span><span>Punjabi</span><span>Assamese</span><span>Urdu</span>
-        <span>Maithili</span><span>Konkani</span><span>Dogri</span><span>Manipuri</span>
-        <span>Sanskrit</span><span>Bodo</span><span>Santali</span><span>Nepali</span>
+        <span>Hindi</span>
+        <span>Bengali</span>
+        <span>Tamil</span>
+        <span>Telugu</span>
+        <span>Marathi</span>
+        <span>Gujarati</span>
+        <span>Kannada</span>
+        <span>Malayalam</span>
+        <span>Odia</span>
+        <span>Punjabi</span>
+        <span>Assamese</span>
+        <span>Urdu</span>
       </div>
+      <p class="mt-4 text-sm text-gray-600">More languages coming soon.</p>
     </div>
   </section>
 
-  <!-- How it Works -->
-  <section id="how" class="py-20 bg-blue-50">
+<section id="upload-analyze" class="py-20 bg-blue-50 min-h-screen">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6 text-center">Upload & Analyze Legal Documents</h3>
+    <div class="bg-white p-6 rounded-xl shadow">
+  
+      <div class="mb-4">
+        <label for="fileInput" class="block text-lg font-medium mb-2">Upload Legal Document</label>
+        <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" />
+        <p id="fileStatus" class="mt-2 text-sm text-gray-600">No file selected.</p>
+      </div>
+      <div class="mb-4">
+        <label for="targetLang" class="block text-lg font-medium mb-2"></label>
+        <input type="text" id="targetLang" value="en" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" />
+      </div>
+      <button onclick="processFile()" class="bg-accent text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition mb-4">Process File</button>
+      
+
+      <pre id="output" class="mt-4 p-4 border rounded-lg bg-gray-50 min-h-[280px] text-lg w-full whitespace-pre-wrap"></pre>
+      
+  
+      <div class="mt-4 mb-4">
+        <label for="question" class="block text-lg font-medium mb-2">Ask a Question About the Summary</label>
+        <input type="text" id="question" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Type your question..." />
+      </div>
+      <button onclick="askQuestion()" class="bg-accent text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition mb-4">Submit Question</button>
+      
+      <p id="loading" class="hidden text-blue-600 mt-2">Processing...</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('fileInput').addEventListener('change', function () {
+    const fileStatus = document.getElementById('fileStatus');
+    if (this.files.length > 0) {
+      fileStatus.textContent = `File selected: ${this.files[0].name}`;
+      fileStatus.classList.remove('text-gray-600');
+      fileStatus.classList.add('text-green-600');
+    } else {
+      fileStatus.textContent = 'No file selected.';
+      fileStatus.classList.remove('text-green-600');
+      fileStatus.classList.add('text-gray-600');
+    }
+  });
+</script>
+
+ <section id="how" class="py-20 bg-blue-50">
     <div class="max-w-6xl mx-auto text-center px-6">
       <h3 class="text-3xl font-bold mb-10">How It Works</h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h4 class="font-bold text-lg mb-2">1. Call Us</h4>
-          <p>Dial our toll-free number and connect instantly.</p>
+          <h4 class="font-bold text-lg mb-2">1. Call or Chat</h4>
+          <p>Dial our bot or use the text chatbot below.</p>
         </div>
         <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
           <h4 class="font-bold text-lg mb-2">2. Ask Your Query</h4>
-          <p>Speak freely — our bot listens, understands, and analyzes.</p>
+          <p>Speak or type your legal question in any supported language.</p>
         </div>
         <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
           <h4 class="font-bold text-lg mb-2">3. Get Instant Answers</h4>
-          <p>Receive accurate responses tailored to your legal question.</p>
+          <p>Receive accurate responses tailored to your question.</p>
         </div>
       </div>
     </div>
   </section>
 
-    <!-- Document Upload Section -->
-  <section id="document" class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto text-center px-6">
-      <h3 class="text-3xl font-bold mb-6">Doubts about a Legal Document?</h3>
-      <p class="mb-6 text-lg">Scan and upload your legal document and let NyayaVaani assist you in understanding it better.</p>
-      <input type="file" class="block mx-auto mb-4 text-center" disabled />
-      <button class="bg-gray-400 text-white px-6 py-3 rounded cursor-not-allowed">Coming Soon...</button>
+
+  <section id="chat-interface" class="py-10 bg-white text-center">
+    <h3 class="text-2xl font-bold mb-4">Ask a Legal Question</h3>
+    <div id="chat-log" class="w-3/4 mx-auto mb-4 p-4 border rounded-lg bg-gray-50 min-h-[200px] max-h-[400px] overflow-auto shadow"></div>
+    <div class="w-3/4 mx-auto flex gap-2">
+      <button id="callBtn" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition">Call Bot</button>
+      <input id="userInput" type="text" class="flex-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Type your legal question..." />
+      <button id="sendBtn" class="bg-accent text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Ask</button>
     </div>
   </section>
 
-  <!-- Security Section -->
+
   <section id="secure" class="py-20 bg-blue-50">
     <div class="max-w-4xl mx-auto text-center">
       <h3 class="text-3xl font-bold mb-6">Secure, Reliable, and Trustworthy</h3>
       <div class="space-y-6 text-left text-lg">
-        <p><strong> Data Privacy:</strong> All user data is encrypted and processed securely, maintaining user confidentiality.</p>
-        <p><strong> Trusted Content:</strong> Our legal information is sourced from official government portals and verified by legal experts.</p>
-        <p><strong> Robust Infrastructure:</strong> Built for 24/7 uptime and minimal latency, ensuring uninterrupted service.</p>
-        <p><strong> Continuous Updates:</strong> Our platform evolves regularly with new features, better models, and wider language
-                       support.</p>
+        <p><strong>Data Privacy:</strong> All user queries are processed securely with strict confidentiality.</p>
+        <p><strong>Trusted Content:</strong> Legal information is sourced from reliable and verified references.</p>
+        <p><strong>Robust Infrastructure:</strong> Built for 24/7 availability and minimal latency.</p>
+        <p><strong>Continuous Updates:</strong> Regular enhancements for better performance and language support.</p>
       </div>
     </div>
   </section>
-  <!-- Chatbot Section -->
-  <section id="chatbot" class="bg-white py-20 px-4">
-    <div class="max-w-4xl mx-auto text-center px-6">
-      <h3 class="text-3xl font-bold mb-6">AI Chatbot (Coming Soon)</h3>
-      <p class="mb-6 text-lg">Ask your legal questions and our intelligent AI chatbot will guide you to the answers — voice or text.</p>
-      <textarea class="w-full max-w-xl mx-auto p-4 border rounded shadow focus:outline-accent" rows="4" placeholder="Type your legal query here..." disabled></textarea>
-      <div class="mt-4">
-        <button class="bg-gray-400 text-white px-6 py-3 rounded cursor-not-allowed">Coming Soon...</button>
+
+
+    <section id="find-legal-services" class="py-20 bg-blue-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">Find Nearby Legal support </h3>
+      <p class="mb-6 max-w-2xl mx-auto text-lg">Locate legal aid and support services near your location with our interactive map feature.</p>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+      <div class="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
+        <p class="text-xl font-semibold text-gray-600">Map Integration Coming Soon...</p>
       </div>
+     </div>
     </div>
-  </section>
-  
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-blue-50">
+    </section>
+  <section id="contact" class="py-20 bg-white">
     <div class="max-w-4xl mx-auto text-center">
       <h3 class="text-3xl font-bold mb-4">Need Help?</h3>
-      <p class="mb-6 text-lg">Call us at <span class="font-bold">+1-857-466-1956</span> or mail us at <span class="font-bold">nyayavaani.ai@gmail.com</span></p>
-
+      <p class="mb-6 text-lg">Email us at <span class="font-bold">nyayavaani.ai@gmail.com</span> or call <span class="font-bold">+1-857-466-1956</span></p>
+      <p>Currently in testing phase</p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center p-6 bg-primary text-white mt-10">
-    <p class="text-sm">&copy; 2025 NyayaVaani. Made to empower justice for all.</p>
-  </footer>
-  <script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
 
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
+  <footer class="text-center p-6 bg-primary text-white mt-10">
+    <p class="text-sm">© 2025 NyayaVaani. Made to empower justice for all.</p>
+  </footer>
+
+  <!-- Client-Side JavaScript -->
+  <script>
+
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+
+    const sendBtn = document.getElementById('sendBtn');
+    const userInput = document.getElementById('userInput');
+    const chatLog = document.getElementById('chat-log');
+    const callBtn = document.getElementById('callBtn');
+
+    function addMessage(sender, text) {
+      const div = document.createElement('div');
+      div.className = sender === 'bot' ? 'text-left mb-2' : 'text-right mb-2';
+      div.innerHTML = `<span class="inline-block px-3 py-2 rounded ${sender === 'bot' ? 'bg-gray-200' : 'bg-blue-100'}">${text}</span>`;
+      chatLog.appendChild(div);
+      chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+    function setLoading(isLoading) {
+      sendBtn.disabled = isLoading;
+      sendBtn.textContent = isLoading ? 'Processing...' : 'Ask';
+      userInput.disabled = isLoading;
+    }
+
+   
+    callBtn.onclick = () => {
+      window.location.href = 'tel:+18574661956';
+    };
+
+
+    sendBtn.onclick = async () => {
+      const question = userInput.value.trim();
+      if (!question) {
+        addMessage('bot', 'Please enter a valid question.');
+        return;
+      }
+
+      addMessage('user', question);
+      userInput.value = '';
+      setLoading(true);
+
+      try {
+        const res = await fetch('http://localhost:3003/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question }),
+        });
+
+        const data = await res.json();
+        if (!res.ok) {
+          throw new Error(data.error || `HTTP error! Status: ${res.status}`);
+        }
+        if (data.error) {
+          throw new Error(`${data.error}${data.details ? `: ${JSON.stringify(data.details)}` : ''}`);
+        }
+        addMessage('bot', data.answer || 'No response received.');
+      } catch (error) {
+        console.error('Client-side error:', error);
+        addMessage('bot', `Error: ${error.message}. Please try again or check if the chatbot server is running.`);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    userInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendBtn.click();
+      }
+    });
+
+    
+   
+    const API_BASE_URL = 'http://localhost:3001';
+
+    async function processFile() {
+      const fileInput = document.getElementById("fileInput");
+      const targetLang = document.getElementById("targetLang").value.trim();
+      const output = document.getElementById("output");
+      const loading = document.getElementById("loading");
+
+      if (!fileInput.files[0]) {
+        output.textContent = "Please select a file.";
+        output.classList.add('text-red-600');
+        return;
+      }
+
+      loading.classList.remove('hidden');
+      output.textContent = "Extracting text...\n";
+      output.classList.remove('text-red-600');
+
+      const formData = new FormData();
+      formData.append("file", fileInput.files[0]);
+      formData.append("language", targetLang);
+      try {
+        const response = await fetch(`${API_BASE_URL}/process`, {
+          method: 'POST',
+          body: formData
+        });
+        const result = await response.json();
+        if (result.success) {
+          output.textContent += `Source language detected: ${result.sourceLang}\n`;
+          output.textContent += `Summarizing...\n`;
+          if (targetLang !== result.sourceLang) {
+            output.textContent += `Translating summary...\n`;
+          }
+          output.textContent += `\nSummary:\n${result.summary}`;
+        } else {
+          output.textContent += `\nError: ${result.error}`;
+          output.classList.add('text-red-600');
+        }
+      } catch (error) {
+        output.textContent += `\nError: ${error.message}`;
+        output.classList.add('text-red-600');
+      } finally {
+        loading.classList.add('hidden');
+      }
+    }
+
+    async function askQuestion() {
+      const question = document.getElementById("question").value.trim();
+      const output = document.getElementById("output");
+      const loading = document.getElementById("loading");
+
+      if (!question) {
+        output.textContent += "\nPlease enter a question.";
+        output.classList.add('text-red-600');
+        return;
+      }
+
+      loading.classList.remove('hidden');
+      output.classList.remove('text-red-600');
+
+      try {
+        const response = await fetch(`${API_BASE_URL}/ask`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question })
+        });
+        const result = await response.json();
+        if (result.success) {
+          output.textContent += `\n\nQuestion: ${question}\nAnswer: ${result.answer}`;
+        } else {
+          output.textContent += `\nError: ${result.error}`;
+          output.classList.add('text-red-600');
+        }
+      } catch (error) {
+        output.textContent += `\nError: ${error.message}`;
+        output.classList.add('text-red-600');
+      } finally {
+        loading.classList.add('hidden');
+      }
+    }
+    addMessage('bot', 'Hello! I am your NyayaVaani legal assistant. Type your question below or upload a document for analysis.');
+  </script>
 </body>
 </html>
