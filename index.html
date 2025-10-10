@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
@@ -21,138 +22,194 @@
     }
   </script>
 </head>
-<body class="bg-gradient-to-b from-light to-white text-gray-800 font-sans">
+<body class="bg-gradient-to-b from-light to-white text-gray-800 font-sans transition-colors duration-500">
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/70 shadow-sm">
-    <div class="container mx-auto flex justify-between items-center px-6 py-4">
-      <a href="#home" class="text-2xl font-extrabold tracking-wide text-primary hover:text-accent transition">NyayaVaani</a>
-      <ul class="hidden md:flex space-x-6 font-medium">
-        <li><a href="#home" class="hover:text-accent transition">Home</a></li>
-        <li><a href="#chat-interface" class="hover:text-accent transition">Chatbot</a></li>
-        <li><a href="#features" class="hover:text-accent transition">Features</a></li>
-        <li><a href="#tech" class="hover:text-accent transition">Technology</a></li>
-        <li><a href="#languages" class="hover:text-accent transition">Languages</a></li>
-        <li><a href="#upload-analyze" class="hover:text-accent transition">Upload</a></li>
-        <li><a href="#callbot" class="hover:text-accent transition">CallBot</a></li>
-        <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
-      </ul>
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 shadow-sm">
+  <div class="container mx-auto flex justify-between items-center px-6 py-4">
+    <a href="#home" class="text-2xl font-extrabold tracking-wide text-primary dark:text-white hover:text-accent transition">NyayaVaani</a>
+    <ul class="hidden md:flex space-x-6 font-medium items-center">
+      <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+      <li><a href="#chat-interface" class="hover:text-accent transition">Chatbot</a></li>
+      <li><a href="#features" class="hover:text-accent transition">Features</a></li>
+      <li><a href="#technology" class="hover:text-accent transition">Technology</a></li>
+      <li><a href="#languages" class="hover:text-accent transition">Languages</a></li>
+      <li><a href="#upload-analyze" class="hover:text-accent transition">Upload</a></li>
+      <li><a href="#callbot" class="hover:text-accent transition">CallBot</a></li>
+      <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
+      <li>
+        <button id="darkModeToggle" class="ml-4 px-3 py-1 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition">Dark Mode</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="pt-32 pb-20 text-center bg-gradient-to-r from-blue-50 via-indigo-50 to-white dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
+  <h2 class="text-5xl md:text-6xl font-extrabold mb-6 text-dark dark:text-white">Welcome to <span class="text-accent">NyayaVaani</span></h2>
+  <p class="text-xl mb-6 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Currently in testing phase</p>
+  <p class="text-lg max-w-2xl mx-auto text-gray-700 dark:text-gray-400">Empowering citizens with instant, voice and text-based access to legal guidance in their native languages.</p>
+</section>
+
+<!-- Features -->
+<section id="features" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-500">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-12 text-dark dark:text-white">Why Choose NyayaVaani?</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="font-semibold text-xl mb-3 text-primary dark:text-white">🎙 Voice Support</h4>
+        <p class="text-gray-600 dark:text-gray-300">Call our AI bot for instant legal guidance in your language.</p>
+      </div>
+      <div class="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="font-semibold text-xl mb-3 text-primary dark:text-white">📍 Legal Aid Locator</h4>
+        <p class="text-gray-600 dark:text-gray-300">Find nearby legal support services by entering your location.<br><span class="italic">Coming soon...</span></p>
+      </div>
+      <div class="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="font-semibold text-xl mb-3 text-primary dark:text-white">🌐 Multilingual</h4>
+        <p class="text-gray-600 dark:text-gray-300">Support for Hindi, English, and regional Indian languages.</p>
+      </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <!-- Hero -->
-  <section id="home" class="pt-32 pb-20 text-center bg-gradient-to-r from-blue-50 via-indigo-50 to-white">
-    <h2 class="text-5xl md:text-6xl font-extrabold mb-6 text-dark">Welcome to <span class="text-accent">NyayaVaani</span></h2>
-    <p class="text-xl mb-6 text-gray-600 max-w-2xl mx-auto">Currently in testing phase</p>
-    <p class="text-lg max-w-2xl mx-auto text-gray-700">Empowering citizens with instant, voice and text-based access to legal guidance in their native languages.</p>
-  </section>
+<!-- Chat Interface -->
+<section id="chat-interface" class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
+  <h3 class="text-3xl font-bold text-center mb-8 text-dark dark:text-white">💬 Ask a Legal Question</h3>
+  <div class="w-3/4 mx-auto p-6 bg-gradient-to-tr from-white/90 to-blue-50/60 dark:from-gray-700/70 dark:to-gray-800/50 backdrop-blur-md rounded-3xl shadow-2xl relative overflow-hidden">
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-100/20 via-white/10 to-indigo-100/20 animate-pulse rounded-3xl dark:from-gray-700/20 dark:to-gray-900/20"></div>
 
-  <!-- Features -->
-  <section id="features" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h3 class="text-4xl font-bold mb-12 text-dark">Why Choose NyayaVaani?</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-          <h4 class="font-semibold text-xl mb-3 text-primary">🎙 Voice Support</h4>
-          <p class="text-gray-600">Call our AI bot for instant legal guidance in your language.</p>
+    <div id="chat-log" class="relative mb-6 p-4 border border-white/30 rounded-2xl bg-white/50 dark:bg-gray-800/50 shadow-inner min-h-[200px] max-h-[400px] overflow-auto backdrop-blur-md text-gray-800 dark:text-gray-200"></div>
+    
+    <div class="flex items-center gap-2 relative z-10">
+      <div class="relative flex-1">
+        <input type="text" id="question" class="w-full p-3 pr-32 border border-white/50 dark:border-gray-500 rounded-2xl focus:outline-none focus:ring-2 focus:ring-accent shadow-sm placeholder-gray-500 dark:placeholder-gray-400" placeholder="Type your question..." />
+        <div class="absolute top-1/2 right-3 transform -translate-y-1/2 flex gap-3 text-gray-500 dark:text-gray-300">
+          <label class="cursor-pointer hover:text-accent hover:scale-110 transition duration-300" title="Attach Media">
+            <input type="file" class="hidden" />
+            📎
+          </label>
+          <button type="button" class="hover:text-accent hover:scale-110 transition duration-300" title="Pin Location">📍</button>
+          <button type="button" class="hover:text-accent hover:scale-110 transition duration-300 animate-pulse" title="Record Voice Note">🎤</button>
         </div>
-        <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-          <h4 class="font-semibold text-xl mb-3 text-primary">📍 Legal Aid Locator</h4>
-          <p class="text-gray-600">Find nearby legal support services by entering your location.<br><span class="italic">Coming soon...</span></p>
+      </div>
+      
+      <button id="sendBtn" class="px-6 py-3 rounded-2xl bg-gradient-to-r from-accent to-primary text-white font-semibold shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 relative overflow-hidden">
+        <span class="relative z-10">Ask</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Technology Section -->
+<section id="technology" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-500">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-12 text-dark dark:text-white">🛠 Technology We Use</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="font-semibold text-xl mb-3 text-primary dark:text-white">AI & NLP</h4>
+        <p class="text-gray-600 dark:text-gray-300">Natural Language Processing to understand your questions accurately.</p>
+      </div>
+      <div class="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="font-semibold text-xl mb-3 text-primary dark:text-white">Cloud Infrastructure</h4>
+        <p class="text-gray-600 dark:text-gray-300">Reliable cloud servers to handle high-volume user requests.</p>
+      </div>
+      <div class="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h4 class="font-semibold text-xl mb-3 text-primary dark:text-white">Real-time Voice Processing</h4>
+        <p class="text-gray-600 dark:text-gray-300">Instant voice-to-text conversion and AI response for quick assistance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Languages Section -->
+<section id="languages" class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-12 text-dark dark:text-white">🗣 Supported Languages</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-lg text-gray-700 dark:text-gray-200">
+      <div class="bg-white/80 dark:bg-gray-800/70 rounded-xl p-4 shadow-md hover:scale-105 transition">Hindi</div>
+      <div class="bg-white/80 dark:bg-gray-800/70 rounded-xl p-4 shadow-md hover:scale-105 transition">English</div>
+      <div class="bg-white/80 dark:bg-gray-800/70 rounded-xl p-4 shadow-md hover:scale-105 transition">Bengali</div>
+      <div class="bg-white/80 dark:bg-gray-800/70 rounded-xl p-4 shadow-md hover:scale-105 transition">Tamil</div>
+      <div class="bg-white/80 dark:bg-gray-800/70 rounded-xl p-4 shadow-md hover:scale-105 transition">Telugu</div>
+      <div class="bg-white/80 dark:bg-gray-800/70 rounded-xl p-4 shadow-md hover:scale-105 transition">Kannada</div>
+      <div class="bg-white/80 dark:bg-gray-800/70 rounded-xl p-4 shadow-md hover:scale-105 transition">Marathi</div>
+      <div class="bg-white/80 dark:bg-gray-800/70 rounded-xl p-4 shadow-md hover:scale-105 transition">Gujarati</div>
+    </div>
+  </div>
+</section>
+
+<!-- Upload & Analyze -->
+<section id="upload-analyze" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-500">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-8 text-dark dark:text-white">📂 Upload & Analyze Documents</h3>
+    <div class="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md rounded-2xl shadow-xl p-8 flex flex-col items-center space-y-6">
+      <input type="file" class="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-gradient-to-r file:from-accent file:to-primary file:text-white hover:file:opacity-90 cursor-pointer" />
+      <button class="relative px-8 py-3 rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold shadow-lg overflow-hidden group">
+        <span class="relative z-10">Analyze Now</span>
+        <span class="absolute inset-0 rounded-xl bg-green-400 opacity-0 group-hover:opacity-30 animate-ping"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CallBot -->
+<section id="callbot" class="relative py-20 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148874050.jpg?semt=ais_hybrid&w=740&q=80" alt="Background" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center z-10 text-white">
+    <div class="space-y-6">
+      <h3 class="text-4xl font-bold">📞 Call Our AI Legal Assistant</h3>
+      <p class="text-lg">Connect instantly with our AI-powered CallBot for voice-based legal guidance in your preferred language.</p>
+      <button class="relative px-8 py-3 rounded-xl bg-gradient-to-r from-accent to-primary text-white font-semibold shadow-lg overflow-hidden group">
+        <span class="relative z-10">Start Call</span>
+        <span class="absolute inset-0 rounded-xl bg-blue-400 opacity-0 group-hover:opacity-40 animate-ping"></span>
+      </button>
+    </div>
+    <div class="flex justify-center relative z-10">
+      <div class="relative w-80 h-80 flex items-center justify-center">
+        <div class="absolute w-72 h-72 rounded-full bg-gradient-to-tr from-accent to-primary animate-ping"></div>
+        <div class="absolute w-60 h-60 rounded-full bg-white flex items-center justify-center shadow-xl overflow-hidden">
+          <img src="https://i.pinimg.com/736x/75/71/60/7571606e7f7acf87a35dcaf2ee9018b9.jpg" alt="India Map" class="w-full h-full object-contain" />
         </div>
-        <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-          <h4 class="font-semibold text-xl mb-3 text-primary">🌐 Multilingual</h4>
-          <p class="text-gray-600">Support for Hindi, English, and regional Indian languages.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Chat Interface -->
-  <section id="chat-interface" class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
-    <h3 class="text-3xl font-bold text-center mb-8 text-dark">💬 Ask a Legal Question</h3>
-    <div class="w-3/4 mx-auto p-6 bg-white/80 backdrop-blur-md rounded-2xl shadow-xl">
-      <div id="chat-log" class="mb-6 p-4 border rounded-xl bg-gray-50 min-h-[200px] max-h-[400px] overflow-auto shadow-inner"></div>
-      <div class="flex gap-2">
-        <input type="text" id="question" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Type your question..." />
-        <button id="sendBtn" class="px-6 py-3 rounded-xl bg-gradient-to-r from-accent to-primary text-white font-medium hover:shadow-lg hover:scale-105 transition">Ask</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Upload & Analyze -->
-  <section id="upload-analyze" class="py-20 bg-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-bold mb-8 text-dark">📂 Upload & Analyze Documents</h3>
-      <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-8 flex flex-col items-center space-y-6">
-        <input type="file" class="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-gradient-to-r file:from-accent file:to-primary file:text-white hover:file:opacity-90 cursor-pointer" />
-        <button class="relative px-8 py-3 rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold shadow-lg overflow-hidden group">
-          <span class="relative z-10">Analyze Now</span>
-          <span class="absolute inset-0 rounded-xl bg-green-400 opacity-0 group-hover:opacity-30 animate-ping"></span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- CallBot -->
-  <section id="callbot" class="relative py-20 bg-gradient-to-r from-indigo-50 to-blue-50 overflow-hidden">
-    <!-- India Map Background -->
-    <div class="absolute inset-0 flex justify-center items-center z-0 opacity-30">
-      <img src="https://img.freepik.com/premium-vector/india-map-icon_609277-5153.jpg" alt="India Map" class="w-[600px] h-auto" />
-    </div>
-
-    <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center z-10">
-      <div class="space-y-6">
-        <h3 class="text-4xl font-bold text-dark">📞 Call Our AI Legal Assistant</h3>
-        <p class="text-lg text-gray-700">Connect instantly with our AI-powered CallBot for voice-based legal guidance in your preferred language.</p>
-        <button class="relative px-8 py-3 rounded-xl bg-gradient-to-r from-accent to-primary text-white font-semibold shadow-lg overflow-hidden group">
-          <span class="relative z-10">Start Call</span>
-          <span class="absolute inset-0 rounded-xl bg-blue-400 opacity-0 group-hover:opacity-40 animate-ping"></span>
-        </button>
-      </div>
-      <div class="flex justify-center relative z-10">
-        <!-- India Map Illustration with Dotted Connections -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" class="w-80 h-80 text-gray-300">
-          <path d="M200 10 L220 40 L210 80 L230 120 L200 150 L220 200 L180 240 L200 280 L160 300 L170 350 L140 400 L160 450 L100 490" stroke="currentColor" stroke-width="2" fill="none" />
-          <circle cx="200" cy="10" r="5" fill="#2563EB">
-            <animate attributeName="r" values="5;10;5" dur="2s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="160" cy="300" r="5" fill="#1E3A8A">
-            <animate attributeName="r" values="5;10;5" dur="2s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="100" cy="490" r="5" fill="#2563EB">
-            <animate attributeName="r" values="5;10;5" dur="2s" repeatCount="indefinite" />
-          </circle>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" class="absolute inset-0 w-full h-full">
+          <circle cx="175" cy="350" r="5" fill="#2563EB"><animate attributeName="r" values="5;10;5" dur="2s" repeatCount="indefinite" /></circle>
+          <circle cx="160" cy="300" r="5" fill="#1E3A8A"><animate attributeName="r" values="5;10;5" dur="3s" repeatCount="indefinite" /></circle>
+          <circle cx="190" cy="260" r="2" fill="#2563EB"><animate attributeName="r" values="5;10;5" dur="2.5s" repeatCount="indefinite" /></circle>
         </svg>
-        <!-- Call Icon Pulse -->
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="relative w-40 h-40">
-            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-accent to-primary animate-ping"></div>
-            <div class="absolute inset-4 rounded-full bg-white flex items-center justify-center shadow-xl">
-              <svg xmlns="https://cdn-icons-png.freepik.com/512/46/46854.png" class="h-16 w-16 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l3.6 7.59-1.35 2.44a1 1 0 00.9 1.47h12v-2H7.42a.5.5 0 01-.45-.72l.93-1.68h7.45a1 1 0 00.9-.55l3.58-6.59A1 1 0 0019 3H6.21l-.94-2H1v2h2z" />
-              </svg>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-4 text-dark">📞 Need Help?</h3>
-      <p class="mb-6 text-lg text-gray-700">Email us at <span class="font-bold">nyayavaani.ai@gmail.com</span> or call <span class="font-bold text-accent">+1-857-466-1956</span></p>
-      <p class="text-gray-500">Currently in testing phase</p>
-    </div>
-  </section>
+<!-- Contact -->
+<section id="contact" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-500">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-4 text-dark dark:text-white">📞 Need Help?</h3>
+    <p class="mb-6 text-lg text-gray-700 dark:text-gray-300">Email us at <span class="font-bold">nyayavaani.ai@gmail.com</span> or call <span class="font-bold text-accent dark:text-accent">+1-857-466-1956</span></p>
+    <p class="text-gray-500 dark:text-gray-400">Currently in testing phase</p>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="text-center p-6 bg-gradient-to-r from-primary to-accent text-white mt-10">
-    <p class="text-sm">© 2025 NyayaVaani. Empowering justice for all.</p>
-  </footer>
+<!-- Footer -->
+<footer class="text-center p-6 bg-gradient-to-r from-primary to-accent text-white mt-10">
+  <p class="text-sm">© 2025 NyayaVaani. Empowering justice for all.</p>
+</footer>
+
+<script>
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  darkModeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    if(document.documentElement.classList.contains('dark')){
+      darkModeToggle.textContent = 'Light Mode';
+    } else {
+      darkModeToggle.textContent = 'Dark Mode';
+    }
+  });
+</script>
 
 </body>
 </html>
-
