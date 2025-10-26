@@ -25,10 +25,10 @@
 
 <body class="bg-gradient-to-b from-light to-white text-gray-800 font-sans transition-colors duration-500">
 
-<!-- Navbar -->
-<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/70 dark:bg-gray-900/80 shadow-sm">
-  <div class="container mx-auto flex justify-between items-center px-6 py-4">
-    <ul class="flex flex-wrap items-center space-x-6 list-none">
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/70 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
+  <div class="w-full flex items-center justify-between px-4 md:px-8 lg:px-12 py-3">
+    <!-- Left side – Menu items -->
+    <ul class="hidden md:flex items-center space-x-6 text-sm lg:text-base">
       <li><a href="#home" class="hover:text-accent transition text-gray-800 dark:text-white">Home</a></li>
       <li><a href="#chat-interface" class="hover:text-accent transition text-gray-800 dark:text-white">Chatbot</a></li>
       <li><a href="#features" class="hover:text-accent transition text-gray-800 dark:text-white">Features</a></li>
@@ -37,12 +37,37 @@
       <li><a href="#upload-analyze" class="hover:text-accent transition text-gray-800 dark:text-white">Upload</a></li>
       <li><a href="#callbot" class="hover:text-accent transition text-gray-800 dark:text-white">CallBot</a></li>
       <li><a href="#contact" class="hover:text-accent transition text-gray-800 dark:text-white">Contact</a></li>
-      <li>
-        <button id="openLogin" class="ml-4 px-4 py-2 bg-accent text-white rounded-lg hover:bg-primary transition">Login / Signup</button>
-      </li>
-      <li>
-        <button id="darkModeToggle" class="ml-4 px-3 py-1 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition">Dark Mode</button>
-      </li>
+    </ul>
+
+    <!-- Right side – Buttons -->
+    <div class="flex items-center space-x-3">
+      <button id="openLogin" class="px-4 py-2 bg-accent text-white rounded-lg hover:bg-primary transition text-sm">
+        Login / Signup
+      </button>
+      <button id="darkModeToggle" class="px-3 py-1 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition text-sm">
+        Dark Mode
+      </button>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button id="mobileMenuBtn" class="md:hidden p-2">
+      <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu (hidden by default) -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-lg">
+    <ul class="flex flex-col space-y-2 p-4 text-sm">
+      <li><a href="#home" class="block hover:text-accent transition text-gray-800 dark:text-white">Home</a></li>
+      <li><a href="#chat-interface" class="block hover:text-accent transition text-gray-800 dark:text-white">Chatbot</a></li>
+      <li><a href="#features" class="block hover:text-accent transition text-gray-800 dark:text-white">Features</a></li>
+      <li><a href="#technology" class="block hover:text-accent transition text-gray-800 dark:text-white">Technology</a></li>
+      <li><a href="#languages" class="block hover:text-accent transition text-gray-800 dark:text-white">Languages</a></li>
+      <li><a href="#upload-analyze" class="block hover:text-accent transition text-gray-800 dark:text-white">Upload</a></li>
+      <li><a href="#callbot" class="block hover:text-accent transition text-gray-800 dark:text-white">CallBot</a></li>
+      <li><a href="#contact" class="block hover:text-accent transition text-gray-800 dark:text-white">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -70,6 +95,39 @@
       <div class="bg-white/80 dark:bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-105 transition">
         <h4 class="font-semibold text-xl mb-3 text-primary dark:text-white">Multilingual</h4>
         <p class="text-gray-600 dark:text-gray-300">Support for Hindi, English, and regional Indian languages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CallBot -->
+<section id="callbot" class="relative py-20 overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="https://plus.unsplash.com/premium_photo-1754723960328-e518235b051d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332" alt="Background" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center z-10 text-white">
+    <div class="space-y-6">
+      <h3 class="text-4xl font-bold">Call Our AI Legal Assistant</h3>
+      <p class="text-lg">Connect instantly with our AI-powered CallBot for voice-based legal guidance in your preferred language.</p>
+      <button class="relative px-8 py-3 rounded-xl bg-gradient-to-r from-accent to-primary text-white font-semibold shadow-lg overflow-hidden group">
+        <span class="relative z-10">Start Call</span>
+        <span class="absolute inset-0 rounded-xl bg-blue-400 opacity-0 group-hover:opacity-40 animate-ping"></span>
+      </button>
+    </div>
+    <div class="flex justify-center relative z-10">
+      <div class="relative w-80 h-80 flex items-center justify-center">
+        <div class="absolute w-72 h-72 rounded-full bg-gradient-to-tr from-accent to-primary animate-ping"></div>
+        <div class="absolute w-60 h-60 rounded-full bg-white flex items-center justify-center shadow-xl overflow-hidden">
+          <img src="https://i.pinimg.com/736x/75/71/60/7571606e7f7acf87a35dcaf2ee9018b9.jpg" alt="India Map" class="w-full h-full object-contain" />
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" class="absolute inset-0 w-full h-full">
+          <circle cx="175" cy="350" r="5" fill="#2563EB"><animate attributeName="r" values="5;10;5" dur="2s" repeatCount="indefinite" /></circle>
+          <circle cx="160" cy="300" r="5" fill="#1E3A8A"><animate attributeName="r" values="5;10;5" dur="3s" repeatCount="indefinite" /></circle>
+          <circle cx="190" cy="260" r="2" fill="#2563EB"><animate attributeName="r" values="5;10;5" dur="2.5s" repeatCount="indefinite" /></circle>
+        </svg>
       </div>
     </div>
   </div>
@@ -156,37 +214,7 @@
   </div>
 </section>
 
-<!-- CallBot -->
-<section id="callbot" class="relative py-20 overflow-hidden">
-  <div class="absolute inset-0 z-0">
-    <img src="https://plus.unsplash.com/premium_photo-1754723960328-e518235b051d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332" alt="Background" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
-  </div>
 
-  <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center z-10 text-white">
-    <div class="space-y-6">
-      <h3 class="text-4xl font-bold">Call Our AI Legal Assistant</h3>
-      <p class="text-lg">Connect instantly with our AI-powered CallBot for voice-based legal guidance in your preferred language.</p>
-      <button class="relative px-8 py-3 rounded-xl bg-gradient-to-r from-accent to-primary text-white font-semibold shadow-lg overflow-hidden group">
-        <span class="relative z-10">Start Call</span>
-        <span class="absolute inset-0 rounded-xl bg-blue-400 opacity-0 group-hover:opacity-40 animate-ping"></span>
-      </button>
-    </div>
-    <div class="flex justify-center relative z-10">
-      <div class="relative w-80 h-80 flex items-center justify-center">
-        <div class="absolute w-72 h-72 rounded-full bg-gradient-to-tr from-accent to-primary animate-ping"></div>
-        <div class="absolute w-60 h-60 rounded-full bg-white flex items-center justify-center shadow-xl overflow-hidden">
-          <img src="https://i.pinimg.com/736x/75/71/60/7571606e7f7acf87a35dcaf2ee9018b9.jpg" alt="India Map" class="w-full h-full object-contain" />
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" class="absolute inset-0 w-full h-full">
-          <circle cx="175" cy="350" r="5" fill="#2563EB"><animate attributeName="r" values="5;10;5" dur="2s" repeatCount="indefinite" /></circle>
-          <circle cx="160" cy="300" r="5" fill="#1E3A8A"><animate attributeName="r" values="5;10;5" dur="3s" repeatCount="indefinite" /></circle>
-          <circle cx="190" cy="260" r="2" fill="#2563EB"><animate attributeName="r" values="5;10;5" dur="2.5s" repeatCount="indefinite" /></circle>
-        </svg>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Contact -->
 <section id="contact" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-500">
@@ -276,36 +304,28 @@
     darkModeToggle.textContent = document.documentElement.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
   });
 
-  // Modal Elements
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Modal handling (unchanged)
   const loginModal = document.getElementById('loginModal');
   const signupModal = document.getElementById('signupModal');
   const forgotModal = document.getElementById('forgotModal');
 
-  // Open Login Modal
   document.getElementById('openLogin').addEventListener('click', openLogin);
 
-  function openLogin() {
-    closeModals();
-    loginModal.classList.remove('hidden');
-  }
-
-  function openSignup() {
-    closeModals();
-    signupModal.classList.remove('hidden');
-  }
-
-  function openForgot() {
-    closeModals();
-    forgotModal.classList.remove('hidden');
-  }
-
+  function openLogin() { closeModals(); loginModal.classList.remove('hidden'); }
+  function openSignup() { closeModals(); signupModal.classList.remove('hidden'); }
+  function openForgot() { closeModals(); forgotModal.classList.remove('hidden'); }
   function closeModals() {
-    [loginModal, signupModal, forgotModal].forEach(m => {
-      if (m) m.classList.add('hidden');
-    });
+    [loginModal, signupModal, forgotModal].forEach(m => { if (m) m.classList.add('hidden'); });
   }
 
-  // Validation Functions
+  // Validation (unchanged)
   function validateLogin() {
     const id = document.getElementById('loginId').value.trim();
     const pass = document.getElementById('loginPass').value.trim();
@@ -313,13 +333,11 @@
     error.textContent = '';
     const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
     const phoneRegex = /^[0-9]{10}$/;
-
     if (!id || !pass) return error.textContent = "All fields required.";
     if (!(emailRegex.test(id) || phoneRegex.test(id))) return error.textContent = "Invalid email or phone.";
     alert("Login successful (frontend only).");
     closeModals();
   }
-
   function validateSignup() {
     const name = document.getElementById('signupName').value.trim();
     const id = document.getElementById('signupId').value.trim();
@@ -329,7 +347,6 @@
     error.textContent = '';
     const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
     const phoneRegex = /^[0-9]{10}$/;
-
     if (!name || !id || !pass || !confirm) return error.textContent = "All fields required.";
     if (!(emailRegex.test(id) || phoneRegex.test(id))) return error.textContent = "Invalid email or phone.";
     if (pass.length < 6) return error.textContent = "Password must be 6+ characters.";
@@ -337,23 +354,18 @@
     alert("Account created (frontend only).");
     closeModals();
   }
-
   function validateForgot() {
     const id = document.getElementById('forgotId').value.trim();
     const error = document.getElementById('forgotError');
     error.textContent = '';
     const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
     const phoneRegex = /^[0-9]{10}$/;
-
     if (!id) return error.textContent = "Please enter email or phone.";
     if (!(emailRegex.test(id) || phoneRegex.test(id))) return error.textContent = "Invalid email or phone.";
     alert("Password reset link sent (frontend only).");
     closeModals();
   }
-
-  function googleSignIn() {
-    alert("Google Sign-In coming soon!");
-  }
+  function googleSignIn() { alert("Google Sign-In coming soon!"); }
 </script>
 
 </body>
