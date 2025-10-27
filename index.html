@@ -25,7 +25,6 @@
 
 <body class="bg-gradient-to-b from-light to-white text-gray-800 font-sans transition-colors duration-500">
 
-<!-- ==================== FULL-WIDTH NAVBAR ==================== -->
 <nav class="fixed top-0 left-0 w-full z-50 bg-white/70 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
   <div class="w-full flex items-center justify-between px-4 md:px-8 lg:px-12 py-3">
     <!-- Left side – Menu items -->
@@ -104,30 +103,7 @@
   </div>
 </section>
 
-<!-- Chat Interface -->
-<section id="chat-interface" class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
-  <h3 class="text-3xl font-bold text-center mb-8 text-dark dark:text-white">Ask a Legal Question</h3>
-  <div class="w-3/4 mx-auto p-6 bg-gradient-to-tr from-white/90 to-blue-50/60 dark:from-gray-700/70 dark:to-gray-800/50 backdrop-blur-md rounded-3xl shadow-2xl relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-r from-blue-100/20 via-white/10 to-indigo-100/20 animate-pulse rounded-3xl dark:from-gray-700/20 dark:to-gray-900/20"></div>
-    <div id="chat-log" class="relative mb-6 p-4 border border-white/30 rounded-2xl bg-white/50 dark:bg-gray-800/50 shadow-inner min-h-[200px] max-h-[400px] overflow-auto backdrop-blur-md text-gray-800 dark:text-gray-200"></div>
-    <div class="flex items-center gap-2 relative z-10">
-      <div class="relative flex-1">
-        <input type="text" id="question" class="w-full p-3 pr-32 border border-white/50 dark:border-gray-500 rounded-2xl focus:outline-none focus:ring-2 focus:ring-accent shadow-sm placeholder-gray-500 dark:placeholder-gray-400" placeholder="Type your question..." />
-        <div class="absolute top-1/2 right-3 transform -translate-y-1/2 flex gap-3 text-gray-500 dark:text-gray-300">
-          <label class="cursor-pointer hover:text-accent hover:scale-110 transition duration-300" title="Attach Media">
-            <input type="file" class="hidden" />
-            Attach
-          </label>
-          <button type="button" class="hover:text-accent hover:scale-110 transition duration-300" title="Pin Location">Location</button>
-          <button type="button" class="hover:text-accent hover:scale-110 transition duration-300 animate-pulse" title="Record Voice Note">Mic</button>
-        </div>
-      </div>
-      <button id="sendBtn" class="px-6 py-3 rounded-2xl bg-gradient-to-r from-accent to-primary text-white font-semibold shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 relative overflow-hidden">
-        <span class="relative z-10">Ask</span>
-      </button>
-    </div>
-  </div>
-</section>
+
 
 <!-- Technology Section -->
 <section id="technology" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-500">
@@ -212,6 +188,33 @@
   </div>
 </section>
 
+  
+<!-- Chat Interface -->
+<section id="chat-interface" class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 transition-colors duration-500">
+  <h3 class="text-3xl font-bold text-center mb-8 text-dark dark:text-white">Ask a Legal Question</h3>
+  <div class="w-3/4 mx-auto p-6 bg-gradient-to-tr from-white/90 to-blue-50/60 dark:from-gray-700/70 dark:to-gray-800/50 backdrop-blur-md rounded-3xl shadow-2xl relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-100/20 via-white/10 to-indigo-100/20 animate-pulse rounded-3xl dark:from-gray-700/20 dark:to-gray-900/20"></div>
+    <div id="chat-log" class="relative mb-6 p-4 border border-white/30 rounded-2xl bg-white/50 dark:bg-gray-800/50 shadow-inner min-h-[200px] max-h-[400px] overflow-auto backdrop-blur-md text-gray-800 dark:text-gray-200"></div>
+    <div class="flex items-center gap-2 relative z-10">
+      <div class="relative flex-1">
+        <input type="text" id="question" class="w-full p-3 pr-32 border border-white/50 dark:border-gray-500 rounded-2xl focus:outline-none focus:ring-2 focus:ring-accent shadow-sm placeholder-gray-500 dark:placeholder-gray-400" placeholder="Type your question..." />
+        <div class="absolute top-1/2 right-3 transform -translate-y-1/2 flex gap-3 text-gray-500 dark:text-gray-300">
+          <label class="cursor-pointer hover:text-accent hover:scale-110 transition duration-300" title="Attach Media">
+            <input type="file" class="hidden" />
+            Attach
+          </label>
+          <button type="button" class="hover:text-accent hover:scale-110 transition duration-300" title="Pin Location">Location</button>
+          <button type="button" class="hover:text-accent hover:scale-110 transition duration-300 animate-pulse" title="Record Voice Note">Mic</button>
+        </div>
+      </div>
+      <button id="sendBtn" class="px-6 py-3 rounded-2xl bg-gradient-to-r from-accent to-primary text-white font-semibold shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 relative overflow-hidden">
+        <span class="relative z-10">Ask</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+  
 <!-- Contact -->
 <section id="contact" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-500">
   <div class="max-w-4xl mx-auto text-center">
@@ -421,3 +424,4 @@
 
 </body>
 </html>
+
